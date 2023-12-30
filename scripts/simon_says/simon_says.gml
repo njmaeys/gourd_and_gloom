@@ -436,6 +436,11 @@ function reset_simon_says() {
 	self.first_click_cooldown = true;
 	self.simon_says_show_success_message = true;
 
+	// Tell the quest manager that simon says has been played once
+	if !obj_quest_manager.has_completed_simon_says_once {
+		obj_quest_manager.has_completed_simon_says_once = true;
+	}
+	
 	spawn_the_successful_grown_items(_player_successfully_grew, obj_sunflower_full);
 }
 
