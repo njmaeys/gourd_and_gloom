@@ -1,0 +1,1 @@
+room_name = rm_wtiches_garden;

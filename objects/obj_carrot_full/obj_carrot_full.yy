@@ -1,0 +1,41 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_carrot_full",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_recipe_destroyable","path":"objects/obj_par_recipe_destroyable/obj_par_recipe_destroyable.yy",},"propertyId":{"name":"obj_to_spawn","path":"objects/obj_par_recipe_destroyable/obj_par_recipe_destroyable.yy",},"value":"obj_carrot",},
+  ],
+  "parent": {
+    "name": "recipe_items",
+    "path": "folders/Objects/recipe_items.yy",
+  },
+  "parentObjectId": {
+    "name": "obj_par_recipe_destroyable",
+    "path": "objects/obj_par_recipe_destroyable/obj_par_recipe_destroyable.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "spr_carrot_full",
+    "path": "sprites/spr_carrot_full/spr_carrot_full.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}
