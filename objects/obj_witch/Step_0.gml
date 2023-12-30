@@ -52,7 +52,7 @@ else {
 if self.garden_dialogue_over 
 {
 	if !path_index {
-		path_start(pth_witch_board_return, 1, path_action_stop, false);
+		path_start(pth_witch_board_return, 2, path_action_stop, false);
 		path_set_closed(pth_witch_board_interaction, true);
 	}
 	

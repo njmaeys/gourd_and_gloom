@@ -14,9 +14,32 @@ if self.mouse_hovering {
 	if mouse_check_button_pressed(mb_left) {
 		mouse_click_noise(true);
 		room_goto(rm_witches_home);
+		// Try to destroy and then create all the things
+		instance_destroy(obj_player);
+		if !instance_exists(obj_player) {
+			instance_create_layer(0, 0, "Instances", obj_player);
+		}
+		instance_destroy(obj_cauldron);
+		if !instance_exists(obj_cauldron) {
+			instance_create_layer(0, 0, "Instances", obj_cauldron);
+		}
+		instance_destroy(obj_player_inventory);
+		if !instance_exists(obj_player_inventory) {
+			instance_create_layer(0, 0, "Instances", obj_player_inventory);
+		}
+		instance_destroy(obj_game_manager);
+		if !instance_exists(obj_game_manager) {
+			instance_create_layer(0, 0, "Instances", obj_game_manager);
+		}
+		instance_destroy(obj_quest_manager);
+		if !instance_exists(obj_quest_manager) {
+			instance_create_layer(0, 0, "Instances", obj_quest_manager);
+		}
 	}
 }
 else {
 	self.image_index = 0;
 }
+
+
 
