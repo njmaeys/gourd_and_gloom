@@ -169,9 +169,10 @@ function draw_settings_menu(_width, _height, _cam_x_offset, _cam_y_offset, _clos
 	);
 	
 	if self.mouse_on_save_game {
-		// _save_game_index = 1; // TODO: Remove when save game is working
+		_save_game_index = 1;
 		if mouse_check_button_pressed(mb_left) {
 			// TODO: Save the game 
+			save_game();
 		}
 	}
 	

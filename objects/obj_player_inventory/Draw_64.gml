@@ -228,6 +228,11 @@ if self.inventory_open {
 
 
 if self.show_settings {
+	// If we are in the menu then just kick out
+	if room == rm_menu {
+		instance_destroy(self);
+	}
+	
 	draw_settings_menu(
 		1000,
 		550,

@@ -1,5 +1,8 @@
 /// @description
 
+// Current day
+self.current_day_in_game = 1;
+
 self.quest_tracker = known_quests();
 
 // Witch

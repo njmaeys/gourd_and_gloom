@@ -46,7 +46,7 @@ else {
 }
 
 
-
+//show_debug_message(self.current_dialogue);
 
 // Track anything that has to happen on path actions
 if self.garden_dialogue_over 

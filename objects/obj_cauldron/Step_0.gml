@@ -1,9 +1,5 @@
 /// @description 
 
-// Depth sorting
-if self.depth_sort {
-	depth =- y;
-}
 
 // TODO: Make this dynamic and based on other triggers
 if keyboard_check_pressed(ord("R")) {
@@ -29,3 +25,7 @@ else {
 }
 
 
+// Depth sorting
+if self.depth_sort {
+	depth =- y;
+}

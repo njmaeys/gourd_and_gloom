@@ -104,6 +104,7 @@
     {"name":"snd_interact_with_folliage","order":8,"path":"sounds/snd_interact_with_folliage/snd_interact_with_folliage.yy",},
     {"name":"spr_menu_exit_game","order":10,"path":"sprites/spr_menu_exit_game/spr_menu_exit_game.yy",},
     {"name":"garden","order":10,"path":"scripts/garden/garden.yy",},
+    {"name":"save_game_data","order":12,"path":"scripts/save_game_data/save_game_data.yy",},
     {"name":"snd_potion_complete","order":6,"path":"sounds/snd_potion_complete/snd_potion_complete.yy",},
     {"name":"string_length_scribble","order":4,"path":"scripts/string_length_scribble/string_length_scribble.yy",},
     {"name":"scribble_super_glyph_copy_all","order":3,"path":"scripts/scribble_super_glyph_copy_all/scribble_super_glyph_copy_all.yy",},

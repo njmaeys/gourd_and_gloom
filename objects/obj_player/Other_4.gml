@@ -2,9 +2,14 @@
 
 
 // Set the player down at the start point of the room
-self.x = obj_player_spawn_points.x;
-self.y = obj_player_spawn_points.y;
-
+if room == rm_menu {
+	self.x = 0;
+	self.y = 0;
+}
+else {
+	self.x = obj_player_spawn_points.x;
+	self.y = obj_player_spawn_points.y;
+}
 
 // Find all the instances of player spawn point
 var _foo = instance_number(obj_player_spawn_points);

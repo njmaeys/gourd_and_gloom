@@ -11,6 +11,7 @@ if obj_player_inventory.inventory_open
 	or instance_exists(obj_dialogue_box) // Prevent player from moving when in dialogue
 	or obj_player_inventory.show_settings // If settings are open don't move around
 	or instance_exists(obj_mini_game_area) // If player is doing a garden mini game (or other) stop movement
+	or room == rm_menu // No moving in the menu
 {
 	vx = 0;
 	vy = 0;

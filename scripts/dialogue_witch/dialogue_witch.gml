@@ -68,7 +68,6 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 
 		switch (_dialogue_state) {
 			case "Introduction":
-				//show_debug_message("### COMPLETING Introduction ####");
 				if obj_quest_manager.quest_tracker.introduction.completed {
 					return;
 				}
@@ -90,7 +89,7 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 			
 		
 			case "First Potions":
-				//show_debug_message("### COMPLETING First Potions ####");
+				show_debug_message("### COMPLETING First Potions ####");
 				if obj_quest_manager.quest_tracker.first_potions.completed {
 					return;
 				}
@@ -122,7 +121,7 @@ function quest_operations(_quest_name) {
 		case "":
 			// Set some default stuff when no quest needed
 			obj_cauldron.current_recipe = -1;
-			
+		
 		case "Introduction":
 			// Ensure that if the quest has already started we kick out
 			if obj_quest_manager.quest_tracker.introduction.started {
