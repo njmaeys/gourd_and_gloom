@@ -8,15 +8,14 @@ if !self.can_click {
 // Mouse check
 self.mouse_hovering = mouse_hovering_object();
 
-// TODO: Implement the hover and mouse click action when ready
-//if self.mouse_hovering {
-//	self.image_index = 1;
+if self.mouse_hovering {
+	self.image_index = 1;
 	
-//	if mouse_check_button_pressed(mb_left) {
-//		room_goto(rm_witches_home);
-//	}
-//}
-//else {
-//	self.image_index = 0;
-//}
+	if mouse_check_button_pressed(mb_left) {
+		load_game();
+	}
+}
+else {
+	self.image_index = 0;
+}
 

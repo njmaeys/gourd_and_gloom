@@ -57,6 +57,10 @@ function save_game() {
 	
 	//show_debug_message("#### Game Saved ####");
 	//show_debug_message(_save_data);
+	// TODO: Make a pop up that says "Game saved or some shit"
+	if obj_player_inventory.show_settings {
+		obj_player_inventory.show_settings = false;
+	}
 }
 
 function load_game() {
@@ -91,8 +95,6 @@ function load_game() {
 	// This doesn't work exactly but can adjust later. I need to get the rest of the stuff saved
 	obj_player.x = _player.pos_x;
 	obj_player.y = _player.pos_y;
-	show_debug_message("\n#### HERE ####");
-	show_debug_message(_player);
 	obj_player.spawn_point_name_dest = _player.spawn_point_name_dest;
 	obj_player.recipe_quest_exit = _player.recipe_quest_exit;
 	obj_player.recipe_quest_progress = _player.recipe_quest_progress;

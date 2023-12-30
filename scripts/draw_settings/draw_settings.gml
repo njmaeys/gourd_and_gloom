@@ -155,35 +155,37 @@ function draw_settings_menu(_width, _height, _cam_x_offset, _cam_y_offset, _clos
 	}
 	
 	// Draw save game button
-	var _save_game_index = 0;
-	var _save_game_x = _camera_x + 400;
-	var _save_game_y = _camera_y + 100;
+	if room != rm_menu {
+		var _save_game_index = 0;
+		var _save_game_x = _camera_x + 400;
+		var _save_game_y = _camera_y + 100;
 	
-	self.mouse_on_save_game = point_in_rectangle(
-		_mouse_x,
-		_mouse_y,
-		_save_game_x,
-		_save_game_y,
-		_save_game_x + 128,
-		_save_game_y + 64
-	);
+		self.mouse_on_save_game = point_in_rectangle(
+			_mouse_x,
+			_mouse_y,
+			_save_game_x,
+			_save_game_y,
+			_save_game_x + 128,
+			_save_game_y + 64
+		);
 	
-	if self.mouse_on_save_game {
-		_save_game_index = 1;
-		if mouse_check_button_pressed(mb_left) {
-			// TODO: Save the game 
-			save_game();
+		if self.mouse_on_save_game {
+			_save_game_index = 1;
+			if mouse_check_button_pressed(mb_left) {
+				// TODO: Save the game 
+				save_game();
+			}
 		}
-	}
 	
-	draw_sprite_stretched(
-		spr_menu_save_game,
-		_save_game_index,
-		_save_game_x,
-		_save_game_y,
-		128,
-		64
-	);
+		draw_sprite_stretched(
+			spr_menu_save_game,
+			_save_game_index,
+			_save_game_x,
+			_save_game_y,
+			128,
+			64
+		);
+	}
 	
 	// Draw the exit to menu button
 	var _exit_to_menu_index = 0;
@@ -204,9 +206,6 @@ function draw_settings_menu(_width, _height, _cam_x_offset, _cam_y_offset, _clos
 		if mouse_check_button_pressed(mb_left) {
 			// Remove the player if it exists
 			mouse_click_noise(true);
-			if instance_exists(obj_player) {
-				instance_destroy(obj_player);
-			}
 			
 			room_goto(rm_menu);
 			self.show_settings = false;

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "mini_games",
-    "path": "folders/Scripts/mini_games.yy",
+    "name": "menu_management",
+    "path": "folders/Sprites/menu_management.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

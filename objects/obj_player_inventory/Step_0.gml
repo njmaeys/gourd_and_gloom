@@ -14,6 +14,7 @@ if self.potion_complete_cooldown > 0 {
 if keyboard_check_pressed(vk_tab) 
 	and !instance_exists(obj_dialogue_box)
 	and !instance_exists(obj_decoration_interaction)
+	and room != rm_menu // No open inventory in menu
 {
 	self.inventory_open = !self.inventory_open;
 }
@@ -29,6 +30,7 @@ if (keyboard_check_pressed(vk_escape)
 
 if keyboard_check_pressed(vk_escape) 
 	and self.potion_complete_cooldown == 0
+	and room != rm_menu
 {
 	self.show_settings = !self.show_settings;
 }

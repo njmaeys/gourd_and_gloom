@@ -6,6 +6,9 @@ move_right = keyboard_check(ord("D"));
 move_up = keyboard_check(ord("W")) * -1; // -1 otherwise inverted
 move_down = keyboard_check(ord("S")) * -1; // -1 otherwise inverted
 
+show_debug_message("\n### HERE ###");
+show_debug_message(obj_player_inventory.inventory_open);
+
 // Calc movement
 if obj_player_inventory.inventory_open 
 	or instance_exists(obj_dialogue_box) // Prevent player from moving when in dialogue

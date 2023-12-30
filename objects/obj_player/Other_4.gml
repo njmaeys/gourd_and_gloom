@@ -3,8 +3,8 @@
 
 // Set the player down at the start point of the room
 if room == rm_menu {
-	self.x = 0;
-	self.y = 0;
+	self.x = -5000;
+	self.y = -5000;
 }
 else {
 	self.x = obj_player_spawn_points.x;
