@@ -5,6 +5,10 @@ function spawn_the_successful_grown_items(_num_to_grow, _obj_to_grow) {
 	audio_stop_sound(snd_simon_says_beep);
 	audio_stop_sound(snd_simon_says_beep_click);
 	
+	// Rabbits
+	// TODO: ...
+	////////////////////////////////////////////////////////
+	
 	// If the spawned stuff has already happened then just exit out
 	if self.have_spawned_items {
 		return;

@@ -1,12 +1,9 @@
-/*
-I need to have the initial check on the mini game board that if the player hasn't interacted just give a short 
-description of "Oh this is magcial blah blah"
-	
-I need to add the close button and if close hit then make sure to call the end and grow everything
-successfully created
-*/
-
 function simon_says() {
+	// Exit out if it's not the right game
+	if self.current_mini_game != "Simon Says" {
+		return;
+	}
+	
 	// Set the final array that they player must fullfil
 	// I think I may need to have a while loop with failure counts
 	var _x = self.x - 10;
@@ -26,7 +23,7 @@ function simon_says() {
 	
 	if self.simon_says_show_success_message {
 		// Show the success message when reset called
-		draw_text_scribble(self.x + 50, self.y + 70, $"You grew {floor(self.simon_says_player_progress)} Sunflowers!");
+		draw_text_scribble(self.x + 50, self.y + 70, $"You grew [c_yellow]{floor(self.simon_says_player_progress)}[/c] Sunflowers!");
 	}
 
 	var _close_spr_index = 0;
@@ -52,9 +49,13 @@ function simon_says() {
 	);
 	
 	// Draw the progress
+	var _progress_shown = self.simon_says_player_progress * 2;
+	if self.simon_says_show_success_message {
+		_progress_shown = 0;
+	}
 	draw_sprite_stretched(
 		spr_sunflower_simon_says_progress,
-		self.simon_says_player_progress * 2,
+		_progress_shown,
 		_x + 60,
 		_y - 80,
 		194,
@@ -118,7 +119,9 @@ function simon_says() {
 
 
 	// Cycle through the current array of expected
-	if self.simon_says_play_next_set {	
+	if self.simon_says_play_next_set 
+		and self.simon_says_player_progress <= self.simon_says_len
+	{	
 		if audio_is_playing(snd_simon_says_beep_click) {
 			draw_sprite_stretched(
 				spr_sunflower_simon_says,
@@ -404,7 +407,9 @@ function check_click_matches_expected (_click_index) {
 			// Exit out if the player makes it to the last simon says
 			if self.simon_says_len == self.simon_says_current_progress + 1 {
 				self.simon_says_player_progress += 1;
+				self.simon_says_play_next_set = false;
 				reset_simon_says();
+				return;
 			}
 			
 			self.simon_says_cycle_cooldown = 40;
@@ -413,7 +418,6 @@ function check_click_matches_expected (_click_index) {
 			self.simon_says_play_next_set = true;
 			self.simon_says_temp_compare = 0;
 			self.simon_says_temp_compare_len = 1;
-			
 		}
 		else {
 			self.simon_says_temp_compare += 1;
@@ -431,6 +435,7 @@ function reset_simon_says() {
 	var _player_successfully_grew = floor(self.simon_says_player_progress);
 	self.first_click_cooldown = true;
 	self.simon_says_show_success_message = true;
+
 	spawn_the_successful_grown_items(_player_successfully_grew, obj_sunflower_full);
 }
 

@@ -10,7 +10,7 @@ if self.create_text_cooldown > 0 {
 }
 
 // Check if the player is nearby so they can do something with the cauldron
-if distance_to_object(obj_player) <= 16 {
+if distance_to_object(obj_player) <= 32 {
 	self.player_at_desk = true;
 }
 else {

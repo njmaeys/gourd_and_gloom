@@ -113,12 +113,6 @@ if !self.playing_mini_game {
 		
 			// Simon says
 			if _i == 0 {
-				// TODO: Simon says may need the music volume lowered
-				// NOTE: This will break if there are more songs... really need audio groups to work
-				// TODO: Tomorrow, I can right click a sound and add it to an audio goup
-				// so work on getting that set for music and sound effects... Be sure to see how to load them in 
-				// as a group
-				
 				self.current_mini_game = "Simon Says";
 				self.must_match_array = -1;
 			}
@@ -129,7 +123,6 @@ if !self.playing_mini_game {
 				self.current_mini_game = "Rabbits";
 			}
 		}
-
 	
 		draw_sprite_stretched(
 			spr_garden_grow,
@@ -139,7 +132,6 @@ if !self.playing_mini_game {
 			64,
 			32
 		);
-	
 
 		_grow_text_y += 64;
 	}

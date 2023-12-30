@@ -11,7 +11,7 @@ function dialogue_witch(_dialogue_state) {
 				"Ahh... I see you are ready to get going.",
 				"I created you to help me brew my potions.",
 				"Every day we have a new list of customer requests, \nand some personal requests.",
-				"To get started, go grab the [c_red]Red Mushrooms[/c] and \n[c_yellow]Sunflowers[/c] by the bookshelves and bring them to \nthe [slant][c_silver]Cauldron[/c][/slant].",
+				"To get started, go grab the [c_red]Red Mushrooms[/c] and \n[c_yellow]Sunflowers[/c] by the bookshelves and bring them to \nthe [c_lime]Cauldron[/c].",
 				"We will be making a [c_red]Basic Health Potion[/c] to start.",
 			]
 		case "First Potions":

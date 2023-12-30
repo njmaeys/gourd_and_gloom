@@ -77,3 +77,6 @@ self.simon_says_temp_compare_len = 1;
 self.first_click_cooldown = true;
 self.simon_says_loop_initialize_cooldown = 0;
 self.simon_says_show_success_message = false;
+
+// Rabbits
+self.rabbits_show_success_message = false;

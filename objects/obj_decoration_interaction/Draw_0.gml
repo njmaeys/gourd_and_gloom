@@ -9,7 +9,9 @@ var _item_x = self.x - 210;
 var _item_y = self.y - 20;
 
 // Only show the potions if the player is in the witches hut where the desk is
-if room == rm_witches_home {
+if room == rm_witches_home 
+	and obj_desk.player_at_desk
+{
 	for (var _i = 0; _i < array_length(obj_player.recipe_quest_progress); _i += 1) {
 		var _item = obj_player.recipe_quest_progress[_i];
 	

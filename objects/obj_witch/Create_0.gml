@@ -8,7 +8,8 @@ image_yscale = 1.5;
 self.run_garden_dialogue = false;
 self.garden_dialogue_over = false;
 if self.follow_garden_path {
-	path_start(pth_witch_board_interaction, 1, path_action_stop, false);
+	//path_start(pth_witch_board_interaction, 1, path_action_stop, false);
+	path_start(pth_witch_board_interaction, 10, path_action_stop, false);
 	self.run_garden_dialogue = true;
 }
 

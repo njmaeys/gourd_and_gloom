@@ -4,7 +4,8 @@
 draw_self();
 
 
-if (self.player_at_desk or self.mouse_hovering)
+//if (self.player_at_desk or self.mouse_hovering)
+if self.player_at_desk
 	and self.create_text_cooldown == 0
 {
 	image_index = 1;
