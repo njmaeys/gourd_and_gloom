@@ -17,6 +17,7 @@ self.has_checked_cave_entrance = false;
 self.cave_entrance_open = false;
 
 // Rabbit carrot offering
+self.can_offer_carrot = false;
 self.has_offered_carrot = false;
 
 // Mini game area

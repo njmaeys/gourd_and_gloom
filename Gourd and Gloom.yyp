@@ -310,6 +310,7 @@
     {"id":{"name":"obj_button_exit_game","path":"objects/obj_button_exit_game/obj_button_exit_game.yy",},},
     {"id":{"name":"rm_wtiches_garden","path":"rooms/rm_wtiches_garden/rm_wtiches_garden.yy",},},
     {"id":{"name":"scribble_typewriter_add_character_delay","path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},},
+    {"id":{"name":"spr_rabbit_idle","path":"sprites/spr_rabbit_idle/spr_rabbit_idle.yy",},},
     {"id":{"name":"player_movement","path":"scripts/player_movement/player_movement.yy",},},
     {"id":{"name":"scribble_external_sound_remove","path":"scripts/scribble_external_sound_remove/scribble_external_sound_remove.yy",},},
     {"id":{"name":"snd_simon_says_beep_click","path":"sounds/snd_simon_says_beep_click/snd_simon_says_beep_click.yy",},},

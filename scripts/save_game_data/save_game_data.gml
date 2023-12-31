@@ -35,6 +35,7 @@ function save_game() {
 		has_check_garden_board_once: obj_quest_manager.has_check_garden_board_once,
 		has_checked_cave_entrance: obj_quest_manager.has_checked_cave_entrance,
 		cave_entrance_open: obj_quest_manager.cave_entrance_open,
+		can_offer_carrot: obj_quest_manager.can_offer_carrot,
 		has_offered_carrot: obj_quest_manager.has_offered_carrot,
 		has_completed_simon_says_once: obj_quest_manager.has_completed_simon_says_once,
 		has_completed_rabbits_once: obj_quest_manager.has_completed_rabbits_once,
@@ -115,6 +116,7 @@ function load_game() {
 	obj_quest_manager.has_check_garden_board_once = _quest_manager.has_check_garden_board_once;
 	obj_quest_manager.has_checked_cave_entrance = _quest_manager.has_checked_cave_entrance;
 	obj_quest_manager.cave_entrance_open = _quest_manager.cave_entrance_open;
+	obj_quest_manager.can_offer_carrot = _quest_manager.can_offer_carrot;
 	obj_quest_manager.has_offered_carrot = _quest_manager.has_offered_carrot;
 	obj_quest_manager.has_completed_simon_says_once = _quest_manager.has_completed_simon_says_once;
 	obj_quest_manager.has_completed_rabbits_once = _quest_manager.has_completed_rabbits_once;

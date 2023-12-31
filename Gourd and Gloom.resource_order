@@ -251,6 +251,7 @@
     {"name":"obj_button_exit_game","order":7,"path":"objects/obj_button_exit_game/obj_button_exit_game.yy",},
     {"name":"rm_wtiches_garden","order":1,"path":"rooms/rm_wtiches_garden/rm_wtiches_garden.yy",},
     {"name":"scribble_typewriter_add_character_delay","order":6,"path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},
+    {"name":"spr_rabbit_idle","order":2,"path":"sprites/spr_rabbit_idle/spr_rabbit_idle.yy",},
     {"name":"scribble_external_sound_remove","order":2,"path":"scripts/scribble_external_sound_remove/scribble_external_sound_remove.yy",},
     {"name":"snd_simon_says_beep_click","order":12,"path":"sounds/snd_simon_says_beep_click/snd_simon_says_beep_click.yy",},
     {"name":"__scribble_class_page","order":5,"path":"scripts/__scribble_class_page/__scribble_class_page.yy",},
