@@ -23,6 +23,8 @@ function add_recipe_item_to_player_inventory(_item_type) {
 	for (var _i = 0; _i < array_length(obj_player_inventory.inventory_recipe); _i += 1) {
 		var _item = obj_player_inventory.inventory_recipe[_i];
 		if _item.rec_name == _item_type and _item.cur_count < obj_player_inventory.inventory_recipe_count_max {
+			show_debug_message($"\nAdd Single item: {_item}");
+			show_debug_message($"Sprite: {sprite_get_name(_item.rec_spr)}");
 			_item.cur_count += 1;
 		}
 	}

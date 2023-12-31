@@ -57,11 +57,11 @@ function rabbits_mini_game() {
 	
 	// Draw the row of rabbits and carrots
 	var _depth = -60000;
-	var _rabbit_x = _x + 15;
-	var _rabbit_y = _y - 20;
+	var _rabbit_x = _x + 40;
+	var _rabbit_y = _y + 25;
 	
-	var _carrot_x = _rabbit_x + 20;
-	var _carrot_y = _rabbit_y + 310;
+	var _carrot_x = _rabbit_x;
+	var _carrot_y = _rabbit_y + 260;
 
 	
 	if !obj_mini_game_area.rabbits_is_running 
