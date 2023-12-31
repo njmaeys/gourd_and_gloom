@@ -81,7 +81,8 @@ function simon_says() {
 		}
 	}
 	
-	if !self.simon_says_show_success_message {
+	if !self.simon_says_show_success_message 
+	{
 		draw_sprite_stretched(
 			spr_mini_game_start,
 			_start_index,

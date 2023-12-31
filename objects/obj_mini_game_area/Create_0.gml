@@ -80,3 +80,8 @@ self.simon_says_show_success_message = false;
 
 // Rabbits
 self.rabbits_show_success_message = false;
+self.rabbits_row_count = 6;
+self.rabbits_is_running = false;
+self.rabbits_starting_count = 6; // Use this to decrease as the rabbits get them
+self.rabbits_timer = 20;
+self.rabbits_timer_interval = 60;

@@ -39,6 +39,7 @@ if !self.playing_mini_game {
 			instance_destroy(self);
 		}
 	}
+	
 	draw_sprite_stretched(
 		spr_close,
 		_close_spr_index,
@@ -119,7 +120,6 @@ if !self.playing_mini_game {
 			
 			// Rabitts
 			if _i == 1 {
-				spawn_the_successful_grown_items(3, obj_carrot_full);
 				self.current_mini_game = "Rabbits";
 			}
 		}

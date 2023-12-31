@@ -19,7 +19,7 @@ if self.click_cooldown > 0 {
 }
 
 
-// Keep track of the simon says beep clicker
+// Simon Says
 if self.simon_says_mouse_click_audio_cooldown > 0 {
 	self.simon_says_mouse_click_audio_cooldown -= 1;
 }
@@ -28,3 +28,9 @@ if self.simon_says_mouse_click_audio_cooldown == 0 {
 		audio_stop_sound(snd_simon_says_beep_click);
 	}
 }
+
+// Rabbits
+if self.rabbits_is_running {
+	rabbits_game_countdown();
+}
+
