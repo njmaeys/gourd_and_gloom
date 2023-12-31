@@ -173,8 +173,8 @@ function draw_settings_menu(_width, _height, _cam_x_offset, _cam_y_offset, _clos
 			_save_game_index = 1;
 			if mouse_check_button_pressed(mb_left) {
 				instance_create_depth(
-					0,
-					0,
+					-5000,
+					-5000,
 					-50000,
 					obj_save_game_indicator
 				);

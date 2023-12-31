@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menu_exit_game",
-    "path": "sprites/spr_menu_exit_game/spr_menu_exit_game.yy",
+    "name": "spr_close",
+    "path": "sprites/spr_close/spr_close.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menu_settings",
-    "path": "sprites/spr_menu_settings/spr_menu_settings.yy",
+    "name": "settings_cog",
+    "path": "sprites/settings_cog/settings_cog.yy",
   },
   "spriteMaskId": null,
   "visible": true,
