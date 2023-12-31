@@ -20,6 +20,7 @@ if self.run_garden_dialogue
 	and !instance_exists(obj_dialogue_box)
 	and !self.garden_dialogue_over
 {
+	self.has_new_quest = true;
 	self.current_dialogue_data = [
 		"I see you found the garden board.",
 		"I've enchanted the garden to grow items very \nquickly.",
@@ -32,9 +33,6 @@ if self.run_garden_dialogue
 	{
 		create_dialogue_box(self);
 	}
-	
-	// TODO: Deal with this. I'm running into issues where the witch shows up and then stuck
-	// in the dialogue box because of variables and how I made the stuff work.
 }
 else { 
 	if self.current_dialogue_data == -1

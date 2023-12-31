@@ -3,6 +3,8 @@
 if mouse_check_button_pressed(mb_left)
 	and instance_exists(obj_exterior_door)
 	and obj_exterior_door.mouse_on_door
+	and !obj_player_inventory.inventory_open
+	and !obj_player_inventory.show_settings
 {
 	self.can_use = true;
 }

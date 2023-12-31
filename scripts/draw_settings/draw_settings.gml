@@ -172,7 +172,12 @@ function draw_settings_menu(_width, _height, _cam_x_offset, _cam_y_offset, _clos
 		if self.mouse_on_save_game {
 			_save_game_index = 1;
 			if mouse_check_button_pressed(mb_left) {
-				// TODO: Save the game 
+				instance_create_depth(
+					0,
+					0,
+					-50000,
+					obj_save_game_indicator
+				);
 				save_game();
 			}
 		}
