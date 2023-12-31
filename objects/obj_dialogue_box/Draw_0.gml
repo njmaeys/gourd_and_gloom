@@ -38,6 +38,7 @@ if keyboard_check_pressed(ord(obj_game_manager.button_interact))
 		if self.current_npc_interacting_with.object_index == obj_witch {
 			if self.current_npc_interacting_with.run_garden_dialogue {
 				self.current_npc_interacting_with.garden_dialogue_over = true;
+				obj_witch.has_new_quest = false;
 				obj_quest_manager.has_check_garden_board_once = true;
 			}
 		}
