@@ -49,8 +49,48 @@ if self.inventory_open {
 			_r_y,
 			$"{_item.rec_name} - {_item.cur_count}"	
 		);
-		// Draw the sprite
+		
+		// Draw the sprites and add btns
 		var _r_x = self.camera_x + self.ingredients_offset_x + 25;
+		
+		var _btn_x = _r_x + 210;
+		var _btn_y = _r_y + 20;
+		var _mouse_on_add_btn = point_in_rectangle(
+			_mouse_x_ui,
+			_mouse_y_ui,
+			_btn_x,
+			_btn_y,
+			_btn_x + 40,
+			_btn_y + 24
+		);
+		
+		var _btn_spr_index = 0;
+		if _mouse_on_add_btn {
+			_btn_spr_index = 1;
+			if mouse_check_button_pressed(mb_left) {
+				add_item_to_cauldron(_item.rec_name);
+			}
+		}
+		
+		draw_sprite_stretched(
+			spr_add_to_cauldron,
+			_btn_spr_index,
+			_btn_x,
+			_btn_y,
+			40,
+			24
+		);
+		
+		// Divider
+		draw_sprite_stretched(
+			spr_hover_box,
+			0,
+			_r_x-15,
+			_r_y+57,
+			280,
+			1
+		);
+		
 		for (var _a = 0; _a < _item.cur_count; _a += 1) {
 			draw_sprite(
 				_item.rec_spr,
@@ -112,35 +152,6 @@ if self.inventory_open {
 				self.camera_y + self.current_recipe_offset_y + 130,
 				300,
 				250
-			);
-	
-			// Create the add to cauldron button instance
-			var _button_active = 0;
-			var _button_x = self.camera_x + self.current_recipe_offset_x + 270;
-			var _button_y = self.camera_y + self.current_recipe_offset_y + 280;
-			self.mouse_at_add_to_cauldron = point_in_rectangle(
-				_mouse_x_ui,
-				_mouse_y_ui,
-				_button_x,
-				_button_y,
-				_button_x + 64,
-				_button_y + 32
-			);
-
-			if obj_cauldron.player_at_cauldron {
-				_button_active = 1;
-		
-				if self.mouse_at_add_to_cauldron {
-					_button_active = 2;
-				}
-			}
-			draw_sprite_stretched(
-				spr_add_to_cauldron,
-				_button_active,
-				_button_x,
-				_button_y,
-				64,
-				32
 			);
 		}
 	

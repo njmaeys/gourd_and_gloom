@@ -37,7 +37,7 @@ camera_y = 0;
 // This will be a limited amount of things for fetch quests and other
 inventory_recipe = recipe_items();
 inventory_recipe_count_min = 0;
-inventory_recipe_count_max = 15;
+inventory_recipe_count_max = 12;
 has_recipe_items = false;
 potion_just_completed = -1;
 potion_complete_cooldown = 0;

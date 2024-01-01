@@ -21,7 +21,20 @@ function known_recipes(_recipe){
 						current: 0,
 					}
 				]
-		}
+			}
+			
+		case "Carrot Juice":
+			return {
+				recipe_name: _recipe,
+				recipe_requirements: [
+					{
+						item_name: "Carrot",
+						item_spr: recipe_item_sprite("Carrot"),
+						needed: 4,
+						current: 0,
+					}
+				]
+			}
 	}
 }
 

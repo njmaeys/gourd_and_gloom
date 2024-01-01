@@ -278,6 +278,7 @@
     {"id":{"name":"obj_carrot","path":"objects/obj_carrot/obj_carrot.yy",},},
     {"id":{"name":"spr_menu_settings_close","path":"sprites/spr_menu_settings_close/spr_menu_settings_close.yy",},},
     {"id":{"name":"spr_sunflower_simon_says_progress","path":"sprites/spr_sunflower_simon_says_progress/spr_sunflower_simon_says_progress.yy",},},
+    {"id":{"name":"spr_hover_box","path":"sprites/spr_hover_box/spr_hover_box.yy",},},
     {"id":{"name":"scribble_font_combine","path":"scripts/scribble_font_combine/scribble_font_combine.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"draw_settings","path":"scripts/draw_settings/draw_settings.yy",},},

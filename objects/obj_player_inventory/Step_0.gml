@@ -44,9 +44,11 @@ if self.mouse_at_add_to_cauldron
 	and self.potion_complete_cooldown == 0
 	and self.mouse_at_add_to_cauldron
 {
-	var _r = obj_cauldron.current_recipe.recipe_requirements;
-	for (var _i = 0; _i < array_length(_r); _i += 1) {
-		var _nm = _r[_i].item_name;
-		add_item_to_cauldron(_nm);
-	}
+	//var _r = obj_cauldron.current_recipe.recipe_requirements;
+	//for (var _i = 0; _i < array_length(_r); _i += 1) {
+	//	var _nm = _r[_i].item_name;
+	//	add_item_to_cauldron(_nm);
+	//}
+	// I may be able to just do this one at a time... hard code and try
+	add_item_to_cauldron("Red Mushroom");
 }

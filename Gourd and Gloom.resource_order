@@ -224,6 +224,7 @@
     {"name":"obj_carrot","order":8,"path":"objects/obj_carrot/obj_carrot.yy",},
     {"name":"spr_menu_settings_close","order":5,"path":"sprites/spr_menu_settings_close/spr_menu_settings_close.yy",},
     {"name":"spr_sunflower_simon_says_progress","order":2,"path":"sprites/spr_sunflower_simon_says_progress/spr_sunflower_simon_says_progress.yy",},
+    {"name":"spr_hover_box","order":4,"path":"sprites/spr_hover_box/spr_hover_box.yy",},
     {"name":"scribble_font_combine","order":5,"path":"scripts/scribble_font_combine/scribble_font_combine.yy",},
     {"name":"draw_settings","order":7,"path":"scripts/draw_settings/draw_settings.yy",},
     {"name":"spr_menu_new_game","order":2,"path":"sprites/spr_menu_new_game/spr_menu_new_game.yy",},
