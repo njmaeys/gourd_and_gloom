@@ -187,6 +187,7 @@
     {"name":"spr_text_complete","order":2,"path":"sprites/spr_text_complete/spr_text_complete.yy",},
     {"name":"spr_cauldron_fire","order":7,"path":"sprites/spr_cauldron_fire/spr_cauldron_fire.yy",},
     {"name":"scribble_kerning_pair_set","order":19,"path":"scripts/scribble_kerning_pair_set/scribble_kerning_pair_set.yy",},
+    {"name":"spr_panda_blade_software","order":21,"path":"sprites/spr_panda_blade_software/spr_panda_blade_software.yy",},
     {"name":"scribble_font_add_msdf","order":3,"path":"scripts/scribble_font_add_msdf/scribble_font_add_msdf.yy",},
     {"name":"spr_pumpkin_player_walk_left","order":4,"path":"sprites/spr_pumpkin_player_walk_left/spr_pumpkin_player_walk_left.yy",},
     {"name":"spr_gourd_and_gloom_title_screen","order":19,"path":"sprites/spr_gourd_and_gloom_title_screen/spr_gourd_and_gloom_title_screen.yy",},
