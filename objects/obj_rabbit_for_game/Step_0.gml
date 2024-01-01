@@ -4,7 +4,8 @@ self.mouse_hovering = mouse_hovering_object();
 
 
 if self.start_running {
-	self.y += self.move_speed;
+	// Using the speed multiplier here to offset how fast they were moving.
+	self.y += self.move_speed * self.speed_multiplier;
 
 }
 

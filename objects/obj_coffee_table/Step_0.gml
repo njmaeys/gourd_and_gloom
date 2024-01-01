@@ -10,16 +10,7 @@ if self.mouse_on_coffee_table
 	and self.player_nearby
 {
 	var _text = "Arcane potions and weathered parchment. \n\nYou can't quite make out the writing on the \nparchment.";
-	
-	instance_create_depth(
-		self.x, 
-		self.y, 
-		-30000, 
-		obj_decoration_interaction
-	);
-	obj_decoration_interaction.text_to_display = _text;
-	obj_decoration_interaction.image_xscale = 15;
-	obj_decoration_interaction.image_yscale = 3.5;
+	obj_interaction_popup(_text);
 }
 
 
