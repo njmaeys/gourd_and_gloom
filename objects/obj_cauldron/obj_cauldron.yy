@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "evnironment",
-    "path": "folders/Objects/evnironment.yy",
+    "name": "decorations",
+    "path": "folders/Objects/decorations.yy",
   },
   "parentObjectId": {
     "name": "obj_par_environment",

@@ -6,6 +6,13 @@ if keyboard_check_pressed(ord("R")) {
 	current_recipe = known_recipes("Basic Health Potion");
 }
 
+if self.current_recipe != -1 {
+	sprite_index = spr_cauldron_fire;
+}
+else {
+	sprite_index = spr_cauldron;
+}
+
 // Mouse check
 self.mouse_hovering = mouse_hovering_object();
 if self.mouse_hovering 

@@ -2,6 +2,7 @@
 
 image_xscale = 0.75;
 image_yscale = 0.75;
+image_speed = 0.5;
 
 
 // Track anything for the actual game
@@ -11,6 +12,6 @@ self.game_start_x = self.x;
 self.game_start_y = self.y;
 self.knock_back_distance = 50;
 self.start_running = false;
-self.speed_multiplier = 1.1; // Tweak this and use it to increase the rabbit speed
+self.speed_multiplier = 0.75; // Tweak this and use it to increase the rabbit speed
 
 

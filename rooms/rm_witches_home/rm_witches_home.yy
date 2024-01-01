@@ -36,6 +36,8 @@
     {"name":"inst_49D286F5","path":"rooms/rm_witches_home/rm_witches_home.yy",},
     {"name":"inst_39ED572","path":"rooms/rm_witches_home/rm_witches_home.yy",},
     {"name":"inst_1BB42E90","path":"rooms/rm_witches_home/rm_witches_home.yy",},
+    {"name":"inst_6D13AC16","path":"rooms/rm_witches_home/rm_witches_home.yy",},
+    {"name":"inst_4DD0179C","path":"rooms/rm_witches_home/rm_witches_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -55,6 +57,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D164103","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_sunflower","path":"objects/obj_sunflower/obj_sunflower.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":792.0,"y":377.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49D286F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_sunflower","path":"objects/obj_sunflower/obj_sunflower.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":816.0,"y":377.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39ED572","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_sunflower","path":"objects/obj_sunflower/obj_sunflower.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":799.0,"y":386.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6D13AC16","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_candle","path":"objects/obj_candle/obj_candle.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":572.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4DD0179C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_candle","path":"objects/obj_candle/obj_candle.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":581.0,"y":261.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B87E781","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_barrier_standard","path":"objects/obj_barrier_standard/obj_barrier_standard.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":9.5,"x":384.0,"y":64.0,},

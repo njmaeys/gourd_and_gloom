@@ -402,7 +402,9 @@ function check_click_matches_expected (_click_index) {
 		}
 	}	
 	
-	if _click_index == self.simon_says_must_match_array[self.simon_says_temp_compare] {
+	if _click_index == self.simon_says_must_match_array[self.simon_says_temp_compare] 
+		and !self.simon_says_show_success_message
+	{
 		
 		if self.simon_says_temp_compare == self.simon_says_current_progress {
 			// Exit out if the player makes it to the last simon says

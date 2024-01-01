@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_carrot",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_recipe_items","path":"objects/obj_par_recipe_items/obj_par_recipe_items.yy",},"propertyId":{"name":"resource_name","path":"objects/obj_par_recipe_items/obj_par_recipe_items.yy",},"value":"\"Carrot\"",},

@@ -34,6 +34,7 @@ if self.player_at_garden_board
 	if (keyboard_check_pressed(ord(obj_game_manager.button_interact)) 
 		or mouse_check_button_pressed(mb_left))
 		and !instance_exists(obj_mini_game_area)
+		and !obj_player_inventory.show_settings
 	{	
 		// If first time playe ris interacting with board then spawn the witch to talk
 		// Otherwise open up the mini game stuff
