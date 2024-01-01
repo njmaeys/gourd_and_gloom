@@ -41,6 +41,7 @@ inventory_recipe_count_max = 12;
 has_recipe_items = false;
 potion_just_completed = -1;
 potion_complete_cooldown = 0;
+potion_completed_successfully = true;
 
 // Draw the settings
 self.show_settings = false;

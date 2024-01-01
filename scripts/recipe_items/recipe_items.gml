@@ -57,10 +57,22 @@ function recipe_item_sprite(_item_name) {
 function add_item_to_cauldron(_item_name) {
 	// Specific interaction with the cauldron to check if the item trying to be added is of the type
 	// it needs within it's current recipe
-	
+
 	// If the cauldron has no active recipe then just back out
 	if obj_cauldron.current_recipe = -1 {
 		return;
+	}
+	
+	var _is_valid_item = is_valid_rec_item(_item_name);
+	show_debug_message("\n### Validation ###");
+	show_debug_message(obj_cauldron.current_recipe);
+	show_debug_message(_is_valid_item);
+	if !_is_valid_item {
+		// The item is not meant for this recipe that is active so reset the recipe and kick out
+		remove_recipe_item_from_player_inventory(_item_name);
+		reset_cauldron_curr_rec_on_bad_item();
+		// TODO: Play some sort of ruin animation just like success and then some sort of sound
+		add_completed_recipe_to_player_tasks(obj_cauldron.current_recipe.recipe_name, false);
 	}
 	
 	// Ensure the player has the item needed before lowering the count in the cauldron
@@ -72,22 +84,28 @@ function add_item_to_cauldron(_item_name) {
 			_has_item = true;
 		}
 	}
-	
+		
 	var _recipe_needs = 0;
 	var _recipe_has = 0;
+	show_debug_message("### Cauld ###");
+	show_debug_message(obj_cauldron.current_recipe);
 	for (var _i = 0; _i < array_length(obj_cauldron.current_recipe.recipe_requirements); _i += 1) {
 		var _it = obj_cauldron.current_recipe.recipe_requirements[_i]
-		
+
 		if _has_item
 			and _it.item_name == _item_name 
 			and _it.current < _it.needed 
 		{
+			// Validate that it's a good item
+			_is_valid_item = true;
+			
 			// Decrease the currently needed number in the recipe
 			_it.current += 1;
 				
 			// Remove the item from the player items
 			remove_recipe_item_from_player_inventory(_item_name);
 		}
+
 		
 		// Every time this runs _recipe_complete should start at 0 and only ever be finally 0 if all items are at 0
 		_recipe_needs += _it.needed;
@@ -97,6 +115,33 @@ function add_item_to_cauldron(_item_name) {
 	// If the recipe is complete the reset the cauldron
 	if _recipe_needs == _recipe_has {
 		// Add the recipe to the quest log completion
-		add_completed_recipe_to_player_tasks(obj_cauldron.current_recipe.recipe_name);
+		add_completed_recipe_to_player_tasks(obj_cauldron.current_recipe.recipe_name, true);
 	}
+}
+
+
+function is_valid_rec_item(_item_name) {
+	var _allowed_rec_item_names = []
+	
+	for (var _i = 0; _i < array_length(obj_cauldron.current_recipe.recipe_requirements); _i += 1) {
+		array_push(_allowed_rec_item_names, obj_cauldron.current_recipe.recipe_requirements[_i].item_name);
+	}
+	
+	for (var _ii = 0; _ii < array_length(_allowed_rec_item_names); _ii += 1) {
+		if _allowed_rec_item_names[_ii] == _item_name {
+			return true;
+		}
+	}
+	return false;
+}
+
+
+function reset_cauldron_curr_rec_on_bad_item() {
+	for (var _i = 0; _i < array_length(obj_cauldron.current_recipe.recipe_requirements); _i += 1) {
+		obj_cauldron.current_recipe.recipe_requirements[_i].current = 0;
+	}
+}
+
+function draw_completed_potion() {
+
 }

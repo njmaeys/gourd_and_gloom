@@ -36,19 +36,3 @@ if keyboard_check_pressed(vk_escape)
 }
 
 
-// Add items to the cauldron 
-if self.mouse_at_add_to_cauldron
-	and obj_cauldron.player_at_cauldron
-	and obj_cauldron.current_recipe != -1
-	and mouse_check_button_pressed(mb_left) 
-	and self.potion_complete_cooldown == 0
-	and self.mouse_at_add_to_cauldron
-{
-	//var _r = obj_cauldron.current_recipe.recipe_requirements;
-	//for (var _i = 0; _i < array_length(_r); _i += 1) {
-	//	var _nm = _r[_i].item_name;
-	//	add_item_to_cauldron(_nm);
-	//}
-	// I may be able to just do this one at a time... hard code and try
-	add_item_to_cauldron("Red Mushroom");
-}

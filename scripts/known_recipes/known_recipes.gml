@@ -38,7 +38,8 @@ function known_recipes(_recipe){
 	}
 }
 
-function add_completed_recipe_to_player_tasks(_recipe_item) {
+function add_completed_recipe_to_player_tasks(_recipe_item, _successful) {
+	obj_player_inventory.potion_completed_successfully = _successful;
 	var _rec_len = array_length(obj_player.recipe_quest_progress);
 	for (var _i = 0; _i < _rec_len; _i += 1) {
 		var _item = obj_player.recipe_quest_progress[_i]
@@ -52,18 +53,21 @@ function add_completed_recipe_to_player_tasks(_recipe_item) {
 			obj_player_inventory.potion_complete_cooldown = 60;
 			audio_play_sound(snd_potion_complete, 0, false, obj_game_manager.vol_current);
 			obj_player_inventory.potion_just_completed = obj_player.recipe_quest_progress[_i];
-			obj_player.recipe_quest_progress[_i].potion_count += 1;
 			
-			var _rec_next = _i + 1;
-			// If the player has completed the objective then reset the cauldron recipe
-			if _rec_next >= _rec_len {
-				// TODO: Figure out how to have some sort of cauldron annimation 
-				obj_cauldron.current_recipe = -1;
-				break;
+			if _successful {
+				obj_player.recipe_quest_progress[_i].potion_count += 1;
+			
+				var _rec_next = _i + 1;
+				// If the player has completed the objective then reset the cauldron recipe
+				if _rec_next >= _rec_len {
+					// TODO: Figure out how to have some sort of cauldron annimation 
+					obj_cauldron.current_recipe = -1;
+					break;
+				}
+							
+				obj_cauldron.current_recipe = known_recipes(obj_player.recipe_quest_progress[_rec_next].potion_name);
+				obj_cauldron.current_recipe_index = _rec_next;
 			}
-			
-			obj_cauldron.current_recipe = known_recipes(obj_player.recipe_quest_progress[_rec_next].potion_name);
-			obj_cauldron.current_recipe_index = _rec_next;
 			
 			// Call break to prevent the same recipe names being updated
 			break;

@@ -65,7 +65,10 @@ if self.inventory_open {
 		);
 		
 		var _btn_spr_index = 0;
-		if _mouse_on_add_btn {
+		if room == rm_witches_home // Ensure player can ONLY add in the hut
+			and _mouse_on_add_btn 
+			and _item.cur_count > 0
+		{
 			_btn_spr_index = 1;
 			if mouse_check_button_pressed(mb_left) {
 				add_item_to_cauldron(_item.rec_name);
@@ -186,21 +189,23 @@ if self.inventory_open {
 	}
 	else {
 		// Draw the potion complete animation stuffs
-		draw_text_transformed_color(
-			self.camera_x + self.current_recipe_offset_x + 30,
-			self.camera_y + self.current_recipe_offset_y + 40,
-			$"{self.potion_just_completed.potion_name} Completed!",
-			2,
-			2,
-			0,
-			c_white,
-			c_white,
-			c_white,
-			c_white,
-			1
+		var _msg = scribble($"Potion completed!");
+		var _msg_spr = self.potion_just_completed.potion_spr;
+		var _msg_x = self.camera_x + self.current_recipe_offset_x + 130;
+		if !potion_completed_successfully {
+			_msg = scribble($"[c_red]Potion failed![/c]");
+			_msg_spr = spr_potion_failure;
+			_msg_x = _msg_x + 50;
+		}
+		_msg.scale(2);
+		
+		_msg.draw(
+			_msg_x, 
+			self.camera_y + self.current_recipe_offset_y + 40
 		);
+		
 		draw_sprite_stretched(
-			self.potion_just_completed.potion_spr,
+			_msg_spr,
 			0,
 			self.camera_x + self.current_recipe_offset_x + 180,
 			self.camera_y + self.current_recipe_offset_y + 110,

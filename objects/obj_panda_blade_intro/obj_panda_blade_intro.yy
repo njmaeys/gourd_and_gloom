@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_panda_blade_software",
-    "path": "sprites/spr_panda_blade_software/spr_panda_blade_software.yy",
+    "name": "panda_blade_software",
+    "path": "sprites/panda_blade_software/panda_blade_software.yy",
   },
   "spriteMaskId": null,
   "visible": true,
