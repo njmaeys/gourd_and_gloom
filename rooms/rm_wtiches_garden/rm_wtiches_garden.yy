@@ -252,9 +252,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6C95530","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_exterior_door","path":"objects/obj_exterior_door/obj_exterior_door.yy",},"properties":[],"rotation":0.0,"scaleX":0.71875,"scaleY":1.546875,"x":690.0,"y":210.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":16,"SerialiseWidth":22,"TileCompressedData":[
--114,130,1,193,-3,194,1,0,-17,130,1,212,-3,210,4,208,130,96,100,-14,130,1,
-212,-3,210,4,208,130,112,132,-14,130,1,225,-3,178,4,227,98,147,132,-14,130,8,
-144,113,161,161,162,163,162,164,-14,130,2,144,132,-20,130,2,144,129,-20,130,2,144,
+-114,130,1,193,-3,194,1,0,-17,130,1,212,-3,210,4,208,130,112,132,-14,130,1,
+212,-3,210,4,208,130,112,132,-14,130,1,101,-3,178,4,227,98,147,132,-14,130,8,
+144,113,161,161,162,163,162,135,-14,130,2,144,132,-20,130,2,144,129,-20,130,2,144,
 129,-20,130,2,144,129,-20,130,2,144,148,-20,130,2,144,148,-16,130,],"TileDataFormat":1,},"tilesetId":{"name":"ts_one","path":"tilesets/ts_one/ts_one.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":16,"SerialiseWidth":22,"TileCompressedData":[
 -8,-2147483648,-5,0,-36,-2147483648,-4,0,-18,-2147483648,-4,0,-39,-2147483648,-5,130,-17,-2147483648,1,130,-3,0,
