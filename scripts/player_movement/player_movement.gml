@@ -52,3 +52,13 @@ function set_idle(_dir) {
 function warp_player(_room) {
 	room_goto(_room);
 }
+
+function warp_with_transition(_room) {
+	instance_create_depth(
+		0,
+		0,
+		-60000,
+		obj_warp,
+		{room_to_warp_to: _room}
+	);
+}

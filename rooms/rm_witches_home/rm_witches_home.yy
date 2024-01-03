@@ -39,6 +39,7 @@
     {"name":"inst_6D13AC16","path":"rooms/rm_witches_home/rm_witches_home.yy",},
     {"name":"inst_4DD0179C","path":"rooms/rm_witches_home/rm_witches_home.yy",},
     {"name":"inst_60541DE0","path":"rooms/rm_witches_home/rm_witches_home.yy",},
+    {"name":"inst_66945BEA","path":"rooms/rm_witches_home/rm_witches_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -82,6 +83,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24BD0194","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_coffee_table","path":"objects/obj_coffee_table/obj_coffee_table.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":771.0,"y":547.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1BB42E90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_witch","path":"objects/obj_witch/obj_witch.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":659.0,"y":228.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_60541DE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_trap_door","path":"objects/obj_trap_door/obj_trap_door.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66945BEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player_spawn_points","path":"objects/obj_player_spawn_points/obj_player_spawn_points.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_player_spawn_points","path":"objects/obj_player_spawn_points/obj_player_spawn_points.yy",},"propertyId":{"name":"spawn_point_name","path":"objects/obj_player_spawn_points/obj_player_spawn_points.yy",},"value":"\"witchs_house_cellar\"",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":714.0,"y":245.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Sprites","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_6DCCAC39","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":-89.74936,"scaleX":3.0,"scaleY":4.0,"spriteId":{"name":"spr_rug_one","path":"sprites/spr_rug_one/spr_rug_one.yy",},"x":832.0,"y":475.0,},

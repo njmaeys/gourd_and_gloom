@@ -149,6 +149,7 @@
     {"id":{"name":"snd_interact_with_folliage","path":"sounds/snd_interact_with_folliage/snd_interact_with_folliage.yy",},},
     {"id":{"name":"spr_menu_exit_game","path":"sprites/spr_menu_exit_game/spr_menu_exit_game.yy",},},
     {"id":{"name":"garden","path":"scripts/garden/garden.yy",},},
+    {"id":{"name":"rm_witch_cellar","path":"rooms/rm_witch_cellar/rm_witch_cellar.yy",},},
     {"id":{"name":"save_game_data","path":"scripts/save_game_data/save_game_data.yy",},},
     {"id":{"name":"snd_potion_complete","path":"sounds/snd_potion_complete/snd_potion_complete.yy",},},
     {"id":{"name":"string_length_scribble","path":"scripts/string_length_scribble/string_length_scribble.yy",},},
@@ -316,6 +317,7 @@
     {"id":{"name":"__scribble_get_effects_map","path":"scripts/__scribble_get_effects_map/__scribble_get_effects_map.yy",},},
     {"id":{"name":"obj_button_exit_game","path":"objects/obj_button_exit_game/obj_button_exit_game.yy",},},
     {"id":{"name":"rm_wtiches_garden","path":"rooms/rm_wtiches_garden/rm_wtiches_garden.yy",},},
+    {"id":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},},
     {"id":{"name":"scribble_typewriter_add_character_delay","path":"scripts/scribble_typewriter_add_character_delay/scribble_typewriter_add_character_delay.yy",},},
     {"id":{"name":"spr_rabbit_idle","path":"sprites/spr_rabbit_idle/spr_rabbit_idle.yy",},},
     {"id":{"name":"player_movement","path":"scripts/player_movement/player_movement.yy",},},
@@ -366,6 +368,7 @@
     {"roomId":{"name":"rm_witches_home","path":"rooms/rm_witches_home/rm_witches_home.yy",},},
     {"roomId":{"name":"rm_wtiches_garden","path":"rooms/rm_wtiches_garden/rm_wtiches_garden.yy",},},
     {"roomId":{"name":"rm_forest","path":"rooms/rm_forest/rm_forest.yy",},},
+    {"roomId":{"name":"rm_witch_cellar","path":"rooms/rm_witch_cellar/rm_witch_cellar.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
