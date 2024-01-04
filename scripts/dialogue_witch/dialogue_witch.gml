@@ -22,13 +22,14 @@ function dialogue_witch(_dialogue_state) {
 			// Allow the player to leave the witches house
 			// NOTE: This causes a bit of a bug if the player leaves before talking to the Witch
 			obj_room_transition.can_use = true;
-			
+			// TODO: Put up a little banner or poster of how the cauldron works on the wall as a reminder
 			return [
 				"That was simple enough, now we need to get to work.",
 				"You'll need to find ingredients in the [c_orange]garden[/c] and \nin the nearby [c_orange]woods[/c].",
 				"I need you to make three more [c_red]Basic Health Potions[/c] \ntoday.",
 				"You can check the [c_orange]desk[/c] to see what you have left \nto do.",
-				"You must complete the potions in order. Also, we \ncannot mix ingredients, that would [shake]ruin[/shake] the brew!",
+				"You can select which potion you want to work on \nfirst. Also, we cannot mix ingredients, \nthat would [shake]ruin[/shake] the brew!",
+				"If you choose a different potion your ingredients \nwill be lost! \nEven if it was the same potion type. \nThat's just how it works...",
 				"You can check the cauldron to see what potion \nrecipe is currently being brewed.",
 			]
 	}
