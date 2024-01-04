@@ -64,14 +64,11 @@ function add_item_to_cauldron(_item_name) {
 	}
 	
 	var _is_valid_item = is_valid_rec_item(_item_name);
-	show_debug_message("\n### Validation ###");
-	show_debug_message(obj_cauldron.current_recipe);
-	show_debug_message(_is_valid_item);
+
 	if !_is_valid_item {
 		// The item is not meant for this recipe that is active so reset the recipe and kick out
 		remove_recipe_item_from_player_inventory(_item_name);
 		reset_cauldron_curr_rec_on_bad_item();
-		// TODO: Play some sort of ruin animation just like success and then some sort of sound
 		add_completed_recipe_to_player_tasks(obj_cauldron.current_recipe.recipe_name, false);
 	}
 	
@@ -87,8 +84,7 @@ function add_item_to_cauldron(_item_name) {
 		
 	var _recipe_needs = 0;
 	var _recipe_has = 0;
-	show_debug_message("### Cauld ###");
-	show_debug_message(obj_cauldron.current_recipe);
+
 	for (var _i = 0; _i < array_length(obj_cauldron.current_recipe.recipe_requirements); _i += 1) {
 		var _it = obj_cauldron.current_recipe.recipe_requirements[_i]
 

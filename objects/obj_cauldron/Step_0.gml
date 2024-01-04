@@ -3,7 +3,7 @@
 
 // TODO: Make this dynamic and based on other triggers
 if keyboard_check_pressed(ord("R")) {
-	current_recipe = known_recipes("Basic Health Potion");
+	self.current_recipe = known_recipes("Basic Health Potion");
 }
 
 if self.current_recipe != -1 {

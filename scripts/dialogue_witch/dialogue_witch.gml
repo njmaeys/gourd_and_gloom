@@ -89,7 +89,7 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 			
 		
 			case "First Potions":
-				show_debug_message("### COMPLETING First Potions ####");
+				//show_debug_message("### COMPLETING First Potions ####");
 				if obj_quest_manager.quest_tracker.first_potions.completed {
 					return;
 				}

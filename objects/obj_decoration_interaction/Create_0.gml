@@ -20,6 +20,7 @@ self.text_offset_y = self.y - 50;
 
 // Mouse check
 self.mouse_on_close = 0;
+self.desk_cooldown_check = 10;
 
 function draw_text_one_char_at_a_time(_text) {
 	self.text_to_display = _text;
