@@ -76,7 +76,9 @@ if distance_to_object(obj_par_npc) <= 30
 		or mouse_check_button_pressed(mb_left)
 	{
 		// Player is interacting with an NPC that has dialogue for them
-		if !instance_exists(obj_dialogue_box) {
+		if !instance_exists(obj_dialogue_box) 
+			and obj_par_npc.mouse_hovering // Make sure the player is trying to interact with the NPC
+		{
 			create_dialogue_box(obj_par_npc);
 		}
 	}

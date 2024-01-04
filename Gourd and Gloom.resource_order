@@ -217,6 +217,7 @@
     {"name":"obj_mushroom_red_full","order":6,"path":"objects/obj_mushroom_red_full/obj_mushroom_red_full.yy",},
     {"name":"__scribble_class_typist","order":6,"path":"scripts/__scribble_class_typist/__scribble_class_typist.yy",},
     {"name":"obj_grass","order":6,"path":"objects/obj_grass/obj_grass.yy",},
+    {"name":"spr_mouse_indicator","order":24,"path":"sprites/spr_mouse_indicator/spr_mouse_indicator.yy",},
     {"name":"scribble_anim_jitter","order":2,"path":"scripts/scribble_anim_jitter/scribble_anim_jitter.yy",},
     {"name":"__scribble_get_generator_state","order":9,"path":"scripts/__scribble_get_generator_state/__scribble_get_generator_state.yy",},
     {"name":"scribble_font_add_all","order":1,"path":"scripts/scribble_font_add_all/scribble_font_add_all.yy",},

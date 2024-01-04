@@ -14,6 +14,7 @@ function dialogue_witch(_dialogue_state) {
 				"To get started, go grab the [c_red]Red Mushrooms[/c] and \n[c_yellow]Sunflowers[/c] by the bookshelves and bring them to \nthe [c_lime]Cauldron[/c].",
 				"We will be making a [c_red]Basic Health Potion[/c] to start.",
 			]
+			
 		case "First Potions":
 			if obj_quest_manager.quest_tracker.first_potions.completed {
 				return;
@@ -86,6 +87,7 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 				quest_operations(obj_witch.current_dialogue);
 				obj_quest_manager.quest_tracker.first_potions.started = true;
 				
+				obj_quest_manager.has_used_cauldron_once = true;
 				break;
 			
 		
@@ -134,6 +136,9 @@ function quest_operations(_quest_name) {
 			with (obj_par_recipe_items) {
 				can_collect = true;
 			}
+			
+			// Set the cauldron indicator
+			obj_quest_manager.has_used_cauldron_once = false;
 			
 			// Create the exit criteria and starting values
 			obj_player.recipe_quest_exit = [

@@ -270,6 +270,7 @@
     {"id":{"name":"obj_mushroom_red_full","path":"objects/obj_mushroom_red_full/obj_mushroom_red_full.yy",},},
     {"id":{"name":"__scribble_class_typist","path":"scripts/__scribble_class_typist/__scribble_class_typist.yy",},},
     {"id":{"name":"obj_grass","path":"objects/obj_grass/obj_grass.yy",},},
+    {"id":{"name":"spr_mouse_indicator","path":"sprites/spr_mouse_indicator/spr_mouse_indicator.yy",},},
     {"id":{"name":"scribble_anim_jitter","path":"scripts/scribble_anim_jitter/scribble_anim_jitter.yy",},},
     {"id":{"name":"__scribble_get_generator_state","path":"scripts/__scribble_get_generator_state/__scribble_get_generator_state.yy",},},
     {"id":{"name":"scribble_font_add_all","path":"scripts/scribble_font_add_all/scribble_font_add_all.yy",},},

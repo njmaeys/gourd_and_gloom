@@ -24,13 +24,15 @@ function dialogue_darken(){
 
 
 function obj_interaction_popup(_text) {
-	instance_create_depth(
-		self.x, 
-		self.y, 
-		-30000, 
-		obj_decoration_interaction
-	);
-	obj_decoration_interaction.text_to_display = _text;
-	obj_decoration_interaction.image_xscale = 15;
-	obj_decoration_interaction.image_yscale = 3.5;
+	if !instance_exists(obj_decoration_interaction) {
+		instance_create_depth(
+			self.x, 
+			self.y, 
+			-30000, 
+			obj_decoration_interaction
+		);
+		obj_decoration_interaction.text_to_display = _text;
+		obj_decoration_interaction.image_xscale = 15;
+		obj_decoration_interaction.image_yscale = 3.5;
+	}
 }

@@ -3,7 +3,7 @@
 
 // Proximity checks
 self.mouse_hovering = mouse_hovering_object();
-self.player_nearby = player_in_range(16);
+self.player_nearby = player_in_range(32);
 
 
 if self.player_nearby

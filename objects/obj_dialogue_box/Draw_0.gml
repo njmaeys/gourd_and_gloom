@@ -16,6 +16,7 @@ var _len_current_dialogue = array_length(self.current_npc_interacting_with.curre
 
 if keyboard_check_pressed(ord(obj_game_manager.button_interact)) 
 	or mouse_check_button_pressed(mb_left)
+	or keyboard_check_pressed(vk_space)
 {
 	// Stop the player from fully skipping text
 	if string_length(self.text_to_display) != t {

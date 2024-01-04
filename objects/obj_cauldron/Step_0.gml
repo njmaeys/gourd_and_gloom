@@ -1,11 +1,5 @@
 /// @description 
 
-
-// TODO: Make this dynamic and based on other triggers
-if keyboard_check_pressed(ord("R")) {
-	self.current_recipe = known_recipes("Basic Health Potion");
-}
-
 if self.current_recipe != -1 {
 	sprite_index = spr_cauldron_fire;
 }

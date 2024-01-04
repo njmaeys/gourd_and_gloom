@@ -39,6 +39,7 @@ function save_game() {
 		has_offered_carrot: obj_quest_manager.has_offered_carrot,
 		has_completed_simon_says_once: obj_quest_manager.has_completed_simon_says_once,
 		has_completed_rabbits_once: obj_quest_manager.has_completed_rabbits_once,
+		has_used_cauldron_once: obj_quest_manager.has_used_cauldron_once,
 	}
 	
 	////////// GAME MANAGER /////////////
@@ -120,6 +121,8 @@ function load_game() {
 	obj_quest_manager.has_offered_carrot = _quest_manager.has_offered_carrot;
 	obj_quest_manager.has_completed_simon_says_once = _quest_manager.has_completed_simon_says_once;
 	obj_quest_manager.has_completed_rabbits_once = _quest_manager.has_completed_rabbits_once;
+	obj_quest_manager.has_used_cauldron_once = _quest_manager.has_used_cauldron_once;
+	
 	
 	////////// GAME MANAGER /////////////
 	obj_game_manager.vol_current = _game_manager.vol_current;

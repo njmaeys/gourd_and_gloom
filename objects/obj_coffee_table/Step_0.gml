@@ -2,7 +2,7 @@
 
 // Check for the mouse on door thing
 self.mouse_on_coffee_table = mouse_hovering_object();
-self.player_nearby = player_in_range(16);
+self.player_nearby = player_in_range(32);
 
 if self.mouse_on_coffee_table
 	and mouse_check_button_pressed(mb_left) 

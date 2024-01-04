@@ -31,6 +31,7 @@ if obj_quest_manager.quest_tracker.introduction.completed == 0
 		with (obj_par_recipe_items) {
 			can_collect = true;
 		}
+		
 	}
 	else {
 		self.has_new_quest = true;
