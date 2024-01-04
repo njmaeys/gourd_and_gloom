@@ -103,6 +103,10 @@ function add_completed_recipe_to_player_tasks(_recipe_item, _successful) {
 					_rec_next = _a;
 				}
 			}
+			
+			if _rec_next == -1 {
+				return;
+			}
 							
 			obj_cauldron.current_recipe = known_recipes(obj_player.recipe_quest_progress[_rec_next].potion_name);
 			// This will auto set the next potion
