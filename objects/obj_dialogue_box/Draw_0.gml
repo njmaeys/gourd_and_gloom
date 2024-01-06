@@ -25,6 +25,7 @@ if keyboard_check_pressed(ord(obj_game_manager.button_interact))
 		return;
 	}
 	
+	
 	if self.current_npc_interacting_with.current_dialogue_array_val < _len_current_dialogue {
 		self.current_npc_interacting_with.current_dialogue_array_val += 1;
 		self.text_to_display = "";

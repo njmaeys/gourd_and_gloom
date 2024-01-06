@@ -1,7 +1,10 @@
 /// @description 
 
-//self.can_use = false;
-self.can_use = true; // TODO: REMOVE FOR ^^
+
+self.can_use = true;
+if obj_quest_manager.lock_cellar_on_next_entry {
+	self.can_use = false;
+}
 self.mouse_hovering = false;
 self.player_nearby = false;
 

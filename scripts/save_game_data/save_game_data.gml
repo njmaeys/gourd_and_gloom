@@ -40,6 +40,7 @@ function save_game() {
 		has_completed_simon_says_once: obj_quest_manager.has_completed_simon_says_once,
 		has_completed_rabbits_once: obj_quest_manager.has_completed_rabbits_once,
 		has_used_cauldron_once: obj_quest_manager.has_used_cauldron_once,
+		lock_cellar_on_next_entry: obj_quest_manager.lock_cellar_on_next_entry,
 	}
 	
 	////////// GAME MANAGER /////////////
@@ -122,6 +123,7 @@ function load_game() {
 	obj_quest_manager.has_completed_simon_says_once = _quest_manager.has_completed_simon_says_once;
 	obj_quest_manager.has_completed_rabbits_once = _quest_manager.has_completed_rabbits_once;
 	obj_quest_manager.has_used_cauldron_once = _quest_manager.has_used_cauldron_once;
+	obj_quest_manager.lock_cellar_on_next_entry = _quest_manager.lock_cellar_on_next_entry;
 	
 	
 	////////// GAME MANAGER /////////////

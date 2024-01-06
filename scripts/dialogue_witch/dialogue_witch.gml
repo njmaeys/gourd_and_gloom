@@ -21,9 +21,9 @@ function dialogue_witch(_dialogue_state) {
 			}
 
 			// Allow the player to leave the witches house
-			// NOTE: This causes a bit of a bug if the player leaves before talking to the Witch
+			// NOTE: This would be better handled elsehwere so they cannot leave until she has talked to them 
 			obj_room_transition.can_use = true;
-			// TODO: Put up a little banner or poster of how the cauldron works on the wall as a reminder
+			
 			return [
 				"That was simple enough, now we need to get to work.",
 				"You'll need to find ingredients in the [c_orange]garden[/c] and \nin the nearby [c_orange]woods[/c].",
@@ -32,6 +32,17 @@ function dialogue_witch(_dialogue_state) {
 				"You can select which potion you want to work on \nfirst. Also, we cannot mix ingredients, \nthat would [shake]ruin[/shake] the brew!",
 				"If you choose a different potion your ingredients \nwill be lost! \nEven if it was the same potion type. \nThat's just how it works...",
 				"You can check the cauldron to see what potion \nrecipe is currently being brewed.",
+			]
+		
+		case "End Day One":
+			if obj_quest_manager.quest_tracker.bed_day_one.completed {
+				return;
+			}
+			
+			obj_room_transition.can_use = false; // Stop the player from leaving the house after end of the day
+			return [
+				"That's all for today.",
+				"Down to the cellar with you. \nThere will be more to do tomorrow.",
 			]
 	}
 }
@@ -44,10 +55,6 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 		return;
 	}
 
-	// New strat
-	// Look at the summation of the potion count in exit criteria vs progress.
-	// With the assumtion I'm continuing to use then 1:1 in potion progress should eventually match complated quest count of potions brewed
-	// NOTE: I may make other exit criteria per quest but for now I like this as the entry criteria into a question complet... Simple question. Have you brewed it all?
 	var _exit_count = 0;
 	var _progress_count = 0;
 	
@@ -55,18 +62,12 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 		_exit_count += _exit_criteria[_i].potion_count;
 		_progress_count += _progress[_i].potion_count;
 	}
-	
-	//show_debug_message($"Exit count: {_exit_count}");
-	//show_debug_message($"Prog count: {_progress_count}");
+
 	
 	if _exit_count == _progress_count
 		and _exit_count != 0
 	{
 		obj_player.quest_completed = true;
-
-
-		//show_debug_message("### Criteria met ###");
-		//show_debug_message(_dialogue_state);
 
 		switch (_dialogue_state) {
 			case "Introduction":
@@ -74,7 +75,6 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 					return;
 				}
 				
-				// TODO: Can do more here with setting up what I need the player to do next.
 				obj_player.recipe_quest_exit = [];
 				obj_player.recipe_quest_progress = [];
 
@@ -92,12 +92,10 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 			
 		
 			case "First Potions":
-				//show_debug_message("### COMPLETING First Potions ####");
 				if obj_quest_manager.quest_tracker.first_potions.completed {
 					return;
 				}
 				
-				// TODO: Can do more here with setting up what I need the player to do next.
 				obj_player.recipe_quest_exit = [];
 				obj_player.recipe_quest_progress = [];
 
@@ -106,13 +104,17 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 				
 				// Set the next interaction with the wtich
 				obj_witch.has_new_quest = false;
-				obj_witch.current_dialogue = "" // TODO: Figure out what is next
-				//quest_operations(obj_witch.current_dialogue);
+				obj_witch.current_dialogue = "" 
+				obj_cauldron.current_recipe = -1;
+				obj_cauldron.current_recipe_index = 0;
 				
-				// TODO: Move around as I progress
-				obj_cauldron.current_recipe = -1; // For now this is just a reset til the next quest is 
-				obj_cauldron.current_recipe_index = 0; // For now this is just a reset til the next quest is 
-				obj_player_inventory.temp_game_end = true;
+				// Set the end of the first day
+				obj_witch.has_new_quest = true;
+				obj_witch.current_dialogue = "End Day One";
+				quest_operations(obj_witch.current_dialogue);
+				obj_room_transition.can_use = false; // Prevent the player from leaving the house
+				obj_quest_manager.lock_cellar_on_next_entry = true; // Prevent the player from leaving the cellar at the end of the day
+				
 				break;
 		}
 	}
@@ -214,7 +216,16 @@ function quest_operations(_quest_name) {
 			obj_quest_manager.last_witch_quest = "First Potions";
 
 			return;
+		
+		case "Bed Day One":
+			// Ensure that if the quest has already started we kick out
+			if obj_quest_manager.quest_tracker.bed_day_one.started {
+				break;
+			}
 			
+			obj_quest_manager.quest_tracker.bed_day_one.started = true;
+			obj_quest_manager.last_witch_quest = "Bed Day One";
+			return; 
 	}
 }
 
@@ -227,6 +238,10 @@ function known_quests() {
 		first_potions: {
 			completed: false,
 			started: false,
-		}
+		},
+		bed_day_one: {
+			completed: false,
+			started: false,
+		},
 	}
 }
