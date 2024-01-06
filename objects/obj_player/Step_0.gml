@@ -13,6 +13,7 @@ if obj_player_inventory.inventory_open
 	or instance_exists(obj_mini_game_area) // If player is doing a garden mini game (or other) stop movement
 	or room == rm_menu // No moving in the menu
 	or room == rm_end_of_day // No moving in the end of day
+	or self.not_allowed_to_move // Generic bool to stop player movement
 {
 	vx = 0;
 	vy = 0;

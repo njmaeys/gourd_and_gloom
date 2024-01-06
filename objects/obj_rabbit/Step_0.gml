@@ -5,7 +5,6 @@
 if !obj_quest_manager.has_offered_carrot 
 	and obj_rabbit_capture_area.player_nearby
 {
-	// TODO: I need a run away mechanic timer once they are there eating
 	image_xscale = -0.75;
 	sprite_index = spr_rabbit;
 	move_towards_point(

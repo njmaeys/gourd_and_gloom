@@ -2,9 +2,16 @@
 
 ////////////////// STORY //////////////////
 /*
+
+Do next
+
+
 Day 2
 
 - Begin working on how to interact and collect from the rabbits in the forest 
+	- Do I want to make this the starting point of options?
+		- Capture the rabbit or pet the rabbit...
+			- IDK what this really differs in
 
 - Set up the hook for getting further into the woods
 	- Ultimately this is to get the pickaxe for opening the cave entrance

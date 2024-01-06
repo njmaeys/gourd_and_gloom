@@ -73,14 +73,7 @@ function add_item_to_cauldron(_item_name) {
 	}
 	
 	// Ensure the player has the item needed before lowering the count in the cauldron
-	var _has_item = false;
-	for (var _i = 0; _i < array_length(obj_player_inventory.inventory_recipe); _i += 1) {
-		var _hi = obj_player_inventory.inventory_recipe[_i]
-		
-		if _hi.rec_name == _item_name and _hi.cur_count > 0 {
-			_has_item = true;
-		}
-	}
+	var _has_item = player_has_needed_item(_item_name);
 		
 	var _recipe_needs = 0;
 	var _recipe_has = 0;

@@ -11,8 +11,7 @@ if self.mouse_on_cauldron_instructions
 	and !instance_exists(obj_decoration_interaction)
 	and self.player_nearby
 {
-	var _text = "TODO: Different pop up \n\nShow cauldron instructions";
-	obj_interaction_popup(_text);
+	self.show_instructions = true;
 }
 
 

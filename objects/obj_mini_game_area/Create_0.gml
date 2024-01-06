@@ -1,15 +1,5 @@
 /// @description 
 
-/*
-TODO: When I come back to simon says. I want to have a few things happen
-- Draw the close button
-	- This should also just grow the stuff if they have gotten any
-- When the player loses keep the window open instead of immediately destroying
-	- You grew X Blah. Go check the garden!
-- Then when they close it that's when it will destroy the thing and their items will have grown
-*/
-
-
 
 // Sizes
 self.play_area_height = 500;

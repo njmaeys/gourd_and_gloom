@@ -6,6 +6,7 @@
     {"name":"barriers","order":2,"path":"folders/Objects/barriers.yy",},
     {"name":"decorations","order":5,"path":"folders/Objects/decorations.yy",},
     {"name":"interactions","order":4,"path":"folders/Objects/decorations/interactions.yy",},
+    {"name":"end_of_day","order":12,"path":"folders/Objects/end_of_day.yy",},
     {"name":"evnironment","order":3,"path":"folders/Objects/evnironment.yy",},
     {"name":"forest","order":11,"path":"folders/Objects/forest.yy",},
     {"name":"rabbits","order":1,"path":"folders/Objects/forest/rabbits.yy",},
@@ -56,7 +57,6 @@
     {"name":"witch","order":9,"path":"folders/Sprites/witch.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"end_of_day","order":12,"path":"folders/Objects/end_of_day.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_pumpkin_player_walk_up","order":1,"path":"sprites/spr_pumpkin_player_walk_up/spr_pumpkin_player_walk_up.yy",},
@@ -296,6 +296,7 @@
     {"name":"spr_mystic_globe","order":10,"path":"sprites/spr_mystic_globe/spr_mystic_globe.yy",},
     {"name":"scribble_font_has_character","order":11,"path":"scripts/scribble_font_has_character/scribble_font_has_character.yy",},
     {"name":"obj_mushroom_red","order":1,"path":"objects/obj_mushroom_red/obj_mushroom_red.yy",},
+    {"name":"spr_cauldron_instructions_pop_up","order":25,"path":"sprites/spr_cauldron_instructions_pop_up/spr_cauldron_instructions_pop_up.yy",},
     {"name":"scribble_anim_reset","order":5,"path":"scripts/scribble_anim_reset/scribble_anim_reset.yy",},
     {"name":"scribble_flush_everything","order":1,"path":"scripts/scribble_flush_everything/scribble_flush_everything.yy",},
     {"name":"spawn_the_successful_grown_items","order":1,"path":"scripts/spawn_the_successful_grown_items/spawn_the_successful_grown_items.yy",},

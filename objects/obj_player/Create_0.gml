@@ -14,6 +14,10 @@ move_down = 0;
 // Move between rooms
 self.spawn_point_name_dest = "witchs_house_brew"; // Original new game spot
 
+// Really block player movement
+// TODO: Make sure I start utilizing this more
+self.not_allowed_to_move = false;
+
 
 // Current recipe quest
 self.recipe_quest_exit = [];

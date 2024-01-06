@@ -139,9 +139,19 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 					return;
 				}
 				
-				//obj_witch.has_new_quest = true;
+				obj_player.recipe_quest_exit = [];
+				obj_player.recipe_quest_progress = [];
+
+				reset_dialogue(obj_witch);
+				obj_quest_manager.quest_tracker.day_two_carrot_juice.completed = true;
 				
-				// TOOD: Next quest will go after this
+				// Set the next interaction with the wtich
+				obj_witch.has_new_quest = false;
+				obj_witch.current_dialogue = "" 
+				obj_cauldron.current_recipe = -1;
+				obj_cauldron.current_recipe_index = 0;
+				
+				// I think I want to have something setup from the witch to get the rabbits in the forest
 				
 				break;
 		}

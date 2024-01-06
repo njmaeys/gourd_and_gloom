@@ -41,6 +41,10 @@ if keyboard_check_pressed(ord("F")) {
 if keyboard_check_pressed(ord("C")) {
 	add_recipe_item_to_player_inventory("Carrot");
 }
+// Rabbit stuff
+if keyboard_check_pressed(ord("R")) {
+	obj_quest_manager.has_offered_carrot = true;
+}
 // Increase the day
 if keyboard_check_pressed(ord("0")) {
 	obj_quest_manager.current_day_in_game += 1;
