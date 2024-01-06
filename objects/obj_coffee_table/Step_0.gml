@@ -10,7 +10,7 @@ if self.mouse_on_coffee_table
 	and self.player_nearby
 {
 	var _text = "Arcane potions and weathered parchment. \n\nYou can't quite make out the writing on the \nparchment.";
-	obj_interaction_popup(_text);
+	obj_interaction_popup(_text, false, {});
 }
 
 

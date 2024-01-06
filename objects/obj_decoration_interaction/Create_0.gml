@@ -22,6 +22,10 @@ self.text_offset_y = self.y - 50;
 self.mouse_on_close = 0;
 self.desk_cooldown_check = 10;
 
+// Player interactions
+self.has_player_interaction = false;
+self.player_interation_prompts = -1;
+
 function draw_text_one_char_at_a_time(_text) {
 	self.text_to_display = _text;
 	

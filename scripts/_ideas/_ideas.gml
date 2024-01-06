@@ -8,10 +8,18 @@ Do next
 
 Day 2
 
-- Begin working on how to interact and collect from the rabbits in the forest 
-	- Do I want to make this the starting point of options?
-		- Capture the rabbit or pet the rabbit...
-			- IDK what this really differs in
+- NOTE 
+	- Before doing anything else, fix the prompt that brings up the ptoion when
+	clicking on the bookcase
+		- I think the issue is proximity
+
+- Carrot work in progress
+	- Use the player interaction prompts to drop the carrot
+	- Figure out how to get the rabbits to come back and eat the carrot
+	- Allow the player to then click on the rabbit and get the needed stuff
+		- Have to decide if i'm going to make a morale decision here or not
+
+
 
 - Set up the hook for getting further into the woods
 	- Ultimately this is to get the pickaxe for opening the cave entrance

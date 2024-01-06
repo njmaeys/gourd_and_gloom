@@ -11,5 +11,5 @@ if self.mouse_on_cave_entrance
 	and obj_boulder_cave_entrance.player_nearby
 {
 	var _text = "It's blocked... \nMaybe with the right [c_orange]tool[/c] I can clear the way.";
-	obj_interaction_popup(_text);
+	obj_interaction_popup(_text, false, {});
 }

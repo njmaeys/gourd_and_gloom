@@ -16,7 +16,7 @@ self.player_in_area = point_in_rectangle(
 	self.bbox_right,
 	self.bbox_bottom
 );
-show_debug_message($"Player in area: {self.player_in_area}");
+
 
 
 

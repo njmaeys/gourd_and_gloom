@@ -13,7 +13,7 @@ if self.mouse_on_puddle
 {
 	// TODO: Figure out over time how this changes as the pumpkins decay
 	var _text = "**You see your reflection** \n\nI sure do look a lot like those [c_orange]other things[/c]!";
-	obj_interaction_popup(_text);
+	obj_interaction_popup(_text, false, {});
 }
 
 

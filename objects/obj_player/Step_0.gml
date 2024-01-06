@@ -1,5 +1,17 @@
 /// @description 
 
+
+// Check if the mouse is hovering the player
+self.mouse_is_hovering = point_in_rectangle(
+	mouse_x,
+	mouse_y,
+	self.x - 32,
+	self.y - 32,
+	self.x + 64,
+	self.y
+);
+
+
 // Check keys for movement
 move_left = keyboard_check(ord("A"));
 move_right = keyboard_check(ord("D"));

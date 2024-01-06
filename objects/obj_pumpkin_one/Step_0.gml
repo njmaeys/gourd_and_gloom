@@ -11,7 +11,7 @@ if self.mouse_on_pumpkin
 	and self.player_nearby
 {
 	var _text = "Hmmm these look a bit like I do. \n\nWhat are they? \n\nAre they me?";
-	obj_interaction_popup(_text);
+	obj_interaction_popup(_text, false, {});
 }
 
 

@@ -12,7 +12,7 @@ if self.mouse_on_bookcase
 	and self.player_nearby
 {
 	var _text = "So many books and trinkets! \n\nHow can she find anything here?";
-	obj_interaction_popup(_text);
+	obj_interaction_popup(_text, false, {});
 }
 
 

@@ -110,3 +110,8 @@ draw_sprite(
 	_close_y
 );
 	
+
+// Player interactions
+if self.has_player_interaction {
+	create_the_interaction_prompts();
+}

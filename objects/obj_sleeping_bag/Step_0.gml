@@ -12,7 +12,7 @@ if self.mouse_on_sleeping_bag
 	// Check if there is end of day text to use
 	if obj_quest_manager.end_of_day_text == -1 {
 		var _text = "I don't need to sleep just yet.";
-		obj_interaction_popup(_text);
+		obj_interaction_popup(_text, false, {});
 	}
 	else {
 		warp_with_transition(rm_end_of_day);

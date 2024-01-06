@@ -29,7 +29,7 @@ if self.player_at_desk
 			self.text_to_display = "There are currently no potions to craft.";
 		}
 		
-		obj_interaction_popup(self.text_to_display);
+		obj_interaction_popup(self.text_to_display, false, {});
 	}
 
 }

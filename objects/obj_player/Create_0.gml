@@ -10,6 +10,8 @@ move_left = 0;
 move_up = 0;
 move_down = 0;
 
+// Check if the mouse is on the player
+self.mouse_is_hovering = false;
 
 // Move between rooms
 self.spawn_point_name_dest = "witchs_house_brew"; // Original new game spot

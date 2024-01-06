@@ -16,7 +16,7 @@ if self.player_nearby
 			audio_play_sound(snd_chain_rattle, 0, false, obj_game_manager.vol_current);
 		}
 		var _text = "It's locked"
-		obj_interaction_popup(_text);
+		obj_interaction_popup(_text, false, {});
 	}
 	else {
 		warp_with_transition(rm_witch_cellar);
