@@ -20,7 +20,7 @@ Day 2
 /*
 - With persistent objects in the menu room I need to have a reset function that set's everything to baseline
 
-	
+- Potions need to not show up unless interacting with the book shelves
 
 */
 

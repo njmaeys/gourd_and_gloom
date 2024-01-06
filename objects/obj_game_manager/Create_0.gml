@@ -13,7 +13,8 @@ cursor_size = 1;
 button_interact = "E";
 
 // Screen size
-full_screen = false;
+full_screen = true; // Default to full screen
+window_set_fullscreen(obj_game_manager.full_screen);
 
 // Game volume
 vol_max = 10;
