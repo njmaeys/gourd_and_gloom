@@ -13,7 +13,11 @@ if self.mouse_hovering {
 	
 	if mouse_check_button_pressed(mb_left) {
 		mouse_click_noise(true);
-		room_goto(rm_witches_home);
+		
+		// Send the player to the start in the cellar
+		obj_player.spawn_point_name_dest = "summon_start";
+		warp_with_transition(rm_witch_cellar)
+		
 		// Try to destroy and then create all the things
 		instance_destroy(obj_player);
 		if !instance_exists(obj_player) {

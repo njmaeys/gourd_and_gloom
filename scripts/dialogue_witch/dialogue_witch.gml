@@ -110,6 +110,8 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 				//quest_operations(obj_witch.current_dialogue);
 				
 				// TODO: Move around as I progress
+				obj_cauldron.current_recipe = -1; // For now this is just a reset til the next quest is 
+				obj_cauldron.current_recipe_index = 0; // For now this is just a reset til the next quest is 
 				obj_player_inventory.temp_game_end = true;
 				break;
 		}

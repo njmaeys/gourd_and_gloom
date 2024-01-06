@@ -23,5 +23,9 @@ if keyboard_check_pressed(ord("M")) {
 if keyboard_check_pressed(ord("F")) {
 	add_recipe_item_to_player_inventory("Sunflower");
 }
+// Increase the day
+if keyboard_check_pressed(ord("0")) {
+	obj_quest_manager.current_day_in_game += 1;
+}
 ///////////////////////////////////////////////////////////
 

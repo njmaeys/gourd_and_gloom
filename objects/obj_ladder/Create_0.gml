@@ -1,6 +1,7 @@
 /// @description 
 
-self.can_use = false;
+//self.can_use = false;
+self.can_use = true; // TODO: REMOVE FOR ^^
 self.mouse_hovering = false;
 self.player_nearby = false;
 

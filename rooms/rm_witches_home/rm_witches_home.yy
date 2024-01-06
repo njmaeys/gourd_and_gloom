@@ -38,6 +38,8 @@
     {"name":"inst_4DD0179C","path":"rooms/rm_witches_home/rm_witches_home.yy",},
     {"name":"inst_60541DE0","path":"rooms/rm_witches_home/rm_witches_home.yy",},
     {"name":"inst_66945BEA","path":"rooms/rm_witches_home/rm_witches_home.yy",},
+    {"name":"inst_6E9710A","path":"rooms/rm_witches_home/rm_witches_home.yy",},
+    {"name":"inst_543290D2","path":"rooms/rm_witches_home/rm_witches_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -82,6 +84,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66945BEA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player_spawn_points","path":"objects/obj_player_spawn_points/obj_player_spawn_points.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_player_spawn_points","path":"objects/obj_player_spawn_points/obj_player_spawn_points.yy",},"propertyId":{"name":"spawn_point_name","path":"objects/obj_player_spawn_points/obj_player_spawn_points.yy",},"value":"\"witchs_house_cellar\"",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":682.0,"y":245.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E9710A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cauldron_instructions","path":"objects/obj_cauldron_instructions/obj_cauldron_instructions.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":453.0,"y":105.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_543290D2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_mystic_globe","path":"objects/obj_mystic_globe/obj_mystic_globe.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":750.0,"y":361.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Sprites","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_6DCCAC39","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":-0.11252594,"scaleX":3.0,"scaleY":4.0,"spriteId":{"name":"spr_rug_one","path":"sprites/spr_rug_one/spr_rug_one.yy",},"x":704.0,"y":395.0,},

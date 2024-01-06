@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_room_transition",
-    "path": "sprites/spr_room_transition/spr_room_transition.yy",
+    "name": "ladder",
+    "path": "sprites/ladder/ladder.yy",
   },
   "spriteMaskId": null,
   "visible": true,

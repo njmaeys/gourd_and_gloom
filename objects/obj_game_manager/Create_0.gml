@@ -18,15 +18,10 @@ full_screen = false;
 // Game volume
 vol_max = 10;
 vol_min = 0;
-vol_current = 2;
+vol_current = 0; // TODO: Default this to middle and fix my multiplier
 
 
 
 
 
-/*
-TODO:
-	- Indicator of the cauldron easier for player to know they are supposed to "click here"
-	- Make resources non collectable when have more than player can carry, push them around
-	- Make the settings menu at the beginning not have the save/continue/exit
-*/
+

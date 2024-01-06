@@ -1,20 +1,28 @@
 /// @description 
 
 self.mouse_hovering = mouse_hovering_object();
-if distance_to_object(obj_player) <= 16 {
+if distance_to_object(obj_player) <= 32 {
 	self.player_nearby = true;
 }
 else {
 	self.player_nearby = false;
 }
 
-if self.can_use
-	and self.player_nearby
-	and mouse_check_button_pressed(mb_left) 
+if self.player_nearby
+	and self.mouse_hovering 
+	and mouse_check_button_pressed(mb_left)
 {
-	warp_with_transition(rm_witches_home);
+	if !self.can_use {
+		if !audio_is_playing(snd_chain_rattle) {
+			audio_play_sound(snd_chain_rattle, 0, false, obj_game_manager.vol_current);
+		}
+		var _text = "It's locked"
+		obj_interaction_popup(_text);
+	}
+	else {
+		warp_with_transition(rm_witches_home);
+	}
 }
-
 
 
 // TODO REMOVE

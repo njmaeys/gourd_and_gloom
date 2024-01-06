@@ -20,7 +20,6 @@ if self.player_nearby
 	}
 	else {
 		warp_with_transition(rm_witch_cellar);
-		//room_goto(rm_witch_cellar);
 	}
 }
 
