@@ -5,6 +5,9 @@ self.current_day_in_game = 1;
 
 self.quest_tracker = known_quests();
 
+// End of day
+self.end_of_day_text = -1;
+
 // Witch
 self.last_witch_quest = "";
 self.has_used_cauldron_once = true; // Initialize as true so it doesn't pop up but then set to true on first quest and then false after first quest

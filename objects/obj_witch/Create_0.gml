@@ -71,6 +71,20 @@ else if obj_quest_manager.quest_tracker.bed_day_one.completed == 0
 	obj_quest_manager.last_witch_quest = self.current_dialogue;
 	obj_quest_manager.quest_tracker.bed_day_one.started = true;
 }
+else if obj_quest_manager.quest_tracker.day_two_carrot_juice.completed == 0
+	and (obj_quest_manager.quest_tracker.day_two_carrot_juice.started == 1 or obj_quest_manager.quest_tracker.day_two_carrot_juice.started == 0)
+{
+	if obj_quest_manager.quest_tracker.day_two_carrot_juice.started == 1 {
+		self.has_new_quest = false;
+	}
+	else {
+		self.has_new_quest = true;
+	}
+	
+	self.current_dialogue = "Day Two Carrot Juice"
+	obj_quest_manager.last_witch_quest = self.current_dialogue;
+	//obj_quest_manager.quest_tracker.day_two_carrot_juice.started = true;
+}
 else {
 	// Default to the last known thing for the witch
 	self.current_dialogue = obj_quest_manager.last_witch_quest;

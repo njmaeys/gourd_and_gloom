@@ -14,10 +14,17 @@ quest_operations(self.current_npc_interacting_with.current_dialogue);
 var _len_current_dialogue = array_length(self.current_npc_interacting_with.current_dialogue_data) - 1; // -1 because 0 index
 
 
+// If the NPC is done with one full cycle of their dialogue then set has_new_quest to false
+var _dialogue_array_len = array_length(self.current_npc_interacting_with.current_dialogue_data);
+
 if keyboard_check_pressed(ord(obj_game_manager.button_interact)) 
 	or mouse_check_button_pressed(mb_left)
 	or keyboard_check_pressed(vk_space)
 {
+	if self.current_npc_interacting_with.current_dialogue_array_val >= _dialogue_array_len - 1 {
+		self.current_npc_interacting_with.has_new_quest = false;
+	}
+	
 	// Stop the player from fully skipping text
 	if string_length(self.text_to_display) != t {
 		// This sets the text to full and returns out so next loop into this on the next frame has full text

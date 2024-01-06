@@ -9,6 +9,9 @@ if self.has_new_quest {
 	// NOTE: I originally had player proximity but that seems to be a bit confusing
 	self.speech_bubble_state = set_indicator("exclaim");
 }
+else {
+	self.speech_bubble_state = -1;
+}
 
 // Mouse check
 self.mouse_hovering = mouse_hovering_object();
@@ -43,8 +46,6 @@ else {
 	}
 }
 
-
-//show_debug_message(self.current_dialogue);
 
 // Track anything that has to happen on path actions
 if self.garden_dialogue_over 

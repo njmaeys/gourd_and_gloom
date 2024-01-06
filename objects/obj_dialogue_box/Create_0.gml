@@ -21,6 +21,8 @@ self.display_speed = 1;
 self.text_offset_x = self.x - 230;
 self.text_offset_y = self.y - 40;
 
+
+
 // Track the text drawing
 t = 0;
 

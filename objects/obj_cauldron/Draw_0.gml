@@ -12,7 +12,6 @@ draw_self();
 
 
 // Set the indicator sprite for mouse click to show that the player needs to use the cauldron
-//show_debug_message(obj_quest_manager.has_used_cauldron_once);
 if !obj_quest_manager.has_used_cauldron_once {
 	draw_sprite_stretched(
 		spr_mouse_indicator,

@@ -40,9 +40,25 @@ function dialogue_witch(_dialogue_state) {
 			}
 			
 			obj_room_transition.can_use = false; // Stop the player from leaving the house after end of the day
+			obj_quest_manager.quest_tracker.bed_day_one.completed = true;
+			
 			return [
 				"That's all for today.",
 				"Down to the cellar with you. \nThere will be more to do tomorrow.",
+			]
+		
+		case "Day Two Carrot Juice":
+			if obj_quest_manager.quest_tracker.day_two_carrot_juice.completed {
+				return;
+			}
+			
+			// TODO: Make sure that the carrot mini game is locked behind this
+			// manage with the quest tracker and make the stuff all grey and button unusable
+			
+			return [
+				"Took you long enough to wake up... \nIt's time to get started.",
+				"I need some [c_orange]Carrot Juice[/c] this morning.",
+				"Make sure the rabbits don't get any!",
 			]
 	}
 }
@@ -114,6 +130,18 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 				quest_operations(obj_witch.current_dialogue);
 				obj_room_transition.can_use = false; // Prevent the player from leaving the house
 				obj_quest_manager.lock_cellar_on_next_entry = true; // Prevent the player from leaving the cellar at the end of the day
+				
+				break;
+			
+			case "Day Two Carrot Juice":
+				// TODO: When I come back this is where I need to pick up is setting the completion and next quest
+				if obj_quest_manager.quest_tracker.day_two_carrot_juice.completed {
+					return;
+				}
+				
+				//obj_witch.has_new_quest = true;
+				
+				// TOOD: Next quest will go after this
 				
 				break;
 		}
@@ -226,6 +254,35 @@ function quest_operations(_quest_name) {
 			obj_quest_manager.quest_tracker.bed_day_one.started = true;
 			obj_quest_manager.last_witch_quest = "Bed Day One";
 			return; 
+		
+		case "Day Two Carrot Juice":
+			// Ensure that if the quest has already started we kick out
+			if obj_quest_manager.quest_tracker.day_two_carrot_juice.started {
+				break;
+			}
+			// Create the exit criteria and starting values
+			obj_player.recipe_quest_exit = [
+				{
+					potion_name: "Carrot Juice",
+					potion_count: 1,
+					potion_spr: spr_carrot_juice,
+				}
+			]
+			obj_player.recipe_quest_progress = [
+				{
+					potion_name: "Carrot Juice",
+					potion_count: 0,
+					potion_spr: spr_carrot_juice,
+				}
+			]
+			
+			// Always default to setting the current recipe to the 0th element
+			obj_cauldron.current_recipe = known_recipes(obj_player.recipe_quest_progress[0].potion_name)
+			obj_cauldron.current_recipe_index = 0;
+			
+			obj_quest_manager.quest_tracker.day_two_carrot_juice.started = true;
+			obj_quest_manager.last_witch_quest = "Day Two Carrot Juice";
+			return
 	}
 }
 
@@ -240,6 +297,10 @@ function known_quests() {
 			started: false,
 		},
 		bed_day_one: {
+			completed: false,
+			started: false,
+		},
+		day_two_carrot_juice: {
 			completed: false,
 			started: false,
 		},
