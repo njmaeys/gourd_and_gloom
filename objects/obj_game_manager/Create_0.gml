@@ -14,13 +14,13 @@ button_interact = "E";
 
 // Screen size
 full_screen = true; // Default to full screen
-full_screen = false; // TODO: Remove for ^^
+//full_screen = false; // TODO: Remove for ^^
 window_set_fullscreen(obj_game_manager.full_screen);
 
 // Game volume
 vol_max = 10;
 vol_min = 0;
-vol_current = 0; // TODO: Default this to middle and fix my multiplier
+vol_current = 3; // TODO: Default this to middle and fix my multiplier
 
 
 

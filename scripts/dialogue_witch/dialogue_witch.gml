@@ -152,7 +152,7 @@ function quest_finished(_progress, _exit_criteria, _dialogue_state) {
 				obj_cauldron.current_recipe_index = 0;
 				
 				// I think I want to have something setup from the witch to get the rabbits in the forest
-				
+				obj_player_inventory.temp_game_end = true;
 				break;
 		}
 	}
